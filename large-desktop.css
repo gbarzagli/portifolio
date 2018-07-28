@@ -181,6 +181,7 @@ section {
 
 #about p {
     grid-area: text;
+    font-size: 1.6em;
 }
 
 #know {
