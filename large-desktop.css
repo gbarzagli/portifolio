@@ -147,7 +147,7 @@ section {
     grid-column-gap: 20px;
     align-content: center;
     position: relative;
-    background: #F5F5F5;
+    background: #ffffff;
     padding: var(--content-padding);
 }
 
@@ -160,7 +160,7 @@ section {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-right-color: #F5F5F5;
+	border-right-color: #ffffff;
 	border-width: 20px;
     margin-top: -20px;
 }
@@ -187,6 +187,7 @@ section {
 #know {
     position: relative;
     padding: var(--content-padding);
+    background: #F5F5F5;
 }
 
 #know::before {
@@ -198,7 +199,7 @@ section {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-right-color: #ffffff;
+	border-right-color: #F5F5F5;
 	border-width: 20px;
     margin-top: -20px;
 }
