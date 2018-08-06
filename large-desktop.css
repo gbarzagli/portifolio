@@ -11,9 +11,9 @@ html, body {
 
 body {
     display: grid;
-    grid-template-areas: var(--body-grid-template-areas);
-    grid-template-columns: var(--body-grid-template-columns);
-    grid-auto-rows: var(--body-grid-template-rows);
+    grid-template-areas: var(--grid-template-areas);
+    grid-template-columns: var(--grid-template-columns);
+    grid-auto-rows: var(--grid-template-rows);
 }
 
 aside {
