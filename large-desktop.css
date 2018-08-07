@@ -217,6 +217,7 @@ section {
 }
 
 #know article:hover {
+    cursor: pointer;
     transform: scale(1.2, 1.2);
     transition: transform 0.5s ease-in;
 }
