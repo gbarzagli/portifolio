@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Montserrat|Pacifico');
-@import url('./variables.css');
+@import url( 'https://fonts.googleapis.com/css?family=Roboto|Montserrat|Pacifico');
+@import url( 'https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url( 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import url( './variables.css');
 
-html, body {
+body,
+html {
     height: 100vh;
     font-family: 'Roboto';
     scroll-behavior: smooth;
@@ -27,11 +30,7 @@ aside {
 .links {
     grid-area: links;
     display: grid;
-    grid-template-areas: 
-        "home"
-        "about"
-        "knowledge"
-    ;
+    grid-template-areas: "home" "about" "knowledge";
     align-items: center;
     position: fixed;
     left: 2.5%;
@@ -113,15 +112,15 @@ section {
 
 #home::before {
     right: 100%;
-	top: 39%;
-	border: solid transparent;
-	content: ' ';
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-right-color: rgba(0, 0, 0, 0.5);
-	border-width: 20px;
+    top: 39%;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: rgba(0, 0, 0, 0.5);
+    border-width: 20px;
     margin-top: -20px;
 }
 
@@ -138,10 +137,7 @@ section {
 
 #about {
     display: grid;
-    grid-template-areas: 
-        "img title"
-        "img text"
-    ;
+    grid-template-areas: "img title" "img text";
     grid-template-columns: 15% auto;
     grid-auto-rows: max-content auto;
     grid-column-gap: 20px;
@@ -153,15 +149,15 @@ section {
 
 #about::before {
     right: 100%;
-	top: 55%;
-	border: solid transparent;
-	content: ' ';
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-right-color: #ffffff;
-	border-width: 20px;
+    top: 55%;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #ffffff;
+    border-width: 20px;
     margin-top: -20px;
 }
 
@@ -193,21 +189,22 @@ section {
 
 #resume::before {
     right: 100%;
-	top: 72%;
-	border: solid transparent;
-	content: ' ';
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-right-color: #f5f5f5;
-	border-width: 20px;
+    top: 72%;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #f5f5f5;
+    border-width: 20px;
     margin-top: -20px;
 }
 
 #resume .container {
-    padding: 16px;
+    display: block;
     overflow: auto;
+    padding: 16px;
 }
 
 #resume .container::-webkit-scrollbar {
@@ -222,17 +219,91 @@ section {
 }
 
 #resume .container article {
-    /* padding: 10px; */
     background: #ffffff;
-    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.45);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.45);
     height: 100%;
+    position: relative;
+}
+
+#resume .container article .btn {
+    background-color: #263238;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.45);
+    cursor: pointer;
+    height: 4em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 4em;
+}
+
+#resume .container article .btn:focus {
+    outline: none;
+}
+
+#resume .container article .btn i {
+    color: #ffffff;
 }
 
 #resume .container article header {
-    background: #01579B;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: linear-gradient(to bottom right, #0D47A1, #1E88E5);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-    width: 100%;
-    height: 300px;
+    padding: 50px;
+    height: 200px;
+    width: calc(100% - 100px);
+}
+
+#resume .container article header h1 {
+    color: #ffffff;
+    font-size: 1.7em;
+}
+
+#resume .container article header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+}
+
+#resume .container article header ul {
+    border-left: 1px solid #ffffff;
+    display: grid;
+    align-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    height: 75%;
+}
+
+#resume .container article header ul li {
+    display: grid;
+    grid-template-columns: 24px auto;
+    grid-template-rows: 24px;
+    grid-gap: 5px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+#resume .container article header ul li i {
+    font-size: 24px;
+}
+
+#resume .container article header ul li span {
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+#resume .container article header ul li span a {
+    color: #ffffff;
+    line-height: 24px;
+    text-decoration: none;
+    vertical-align: middle;
 }
 
 /* #know {
