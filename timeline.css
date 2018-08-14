@@ -1,0 +1,120 @@
+
+.timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline h4,
+.timeline h5,
+.timeline h6 {
+    line-height: inherit;
+    margin: 0;
+}
+
+/*----- TIMELINE ITEM -----*/
+.timeline-item {
+    width: 50%;
+    padding-left: 40px;
+    position: relative;
+}
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 0 0.5em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+.timeline-marker::before {
+    background: #0d47a1;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 12px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 12px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.timeline-marker::after {
+    content: "";
+    width: 3px;
+    background: #ccd5db;
+    display: block;
+    position: absolute;
+    top: 18px;
+    bottom: 0;
+    left: 7px;
+}
+
+.timeline-item:last-child .timeline-marker:after {
+    content: none;
+}
+.timeline-item:not(.period):hover .timeline-marker:before {
+    background: transparent;
+    border: 3px solid #0d47a1;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+}
+
+.timeline-item:nth-child(odd) {
+    float: right;
+}
+.timeline-item:nth-child(even) {
+    display: grid;
+    justify-content: end;
+    width: calc(50% - 40px);
+    padding-left: 0;
+    padding-right: 40px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-marker::before {
+    background: #0d47a1;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 12px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 12px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.timeline-item:nth-child(even) .timeline-marker::after {
+    content: "";
+    width: 3px;
+    background: #ccd5db;
+    display: block;
+    position: absolute;
+    top: 18px;
+    bottom: 0;
+    right: 7px;
+}
