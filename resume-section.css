@@ -1,0 +1,147 @@
+#resume {
+    display: grid;
+    position: relative;
+    padding: var(--content-padding);
+    background: #f5f5f5;
+}
+
+#resume::before {
+    right: 100%;
+    top: 72%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #f5f5f5;
+    border-width: 20px;
+    margin-top: -20px;
+}
+
+#resume .container {
+    display: block;
+    overflow: auto;
+    padding: 16px;
+}
+
+#resume .container::-webkit-scrollbar {
+    background: #cfd8dc;
+    border-radius: 10px;
+    width: 10px;
+}
+
+#resume .container::-webkit-scrollbar-thumb {
+    background: #90a4ae;
+    border-radius: 10px;
+}
+
+#resume .container article {
+    background: #ffffff;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.45);
+    min-height: 100%;
+    position: relative;
+}
+
+#resume .container article .btn {
+    background-color: #263238;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    height: 4em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 4em;
+    z-index: 1;
+}
+
+#resume .container article .btn:focus {
+    outline: none;
+}
+
+#resume .container article .btn i {
+    color: #ffffff;
+}
+
+#resume .container article header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: linear-gradient(to bottom right, #0d47a1, #1e88e5);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    padding: 50px;
+    height: 200px;
+    width: calc(100% - 100px);
+}
+
+#resume .container article header h1 {
+    color: #ffffff;
+    font-size: 1.7em;
+}
+
+#resume .container article header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+}
+
+#resume .container article header ul {
+    border-left: 1px solid #ffffff;
+    display: grid;
+    align-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    height: 80%;
+}
+
+#resume .container article header ul li {
+    display: grid;
+    grid-template-columns: 24px auto;
+    grid-template-rows: 24px;
+    grid-gap: 5px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+#resume .container article header ul li i {
+    font-size: 24px;
+}
+
+#resume .container article header ul li span {
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+#resume .container article header ul li span a {
+    color: #ffffff;
+    line-height: 24px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#resume .container article .experience {
+    height: fit-content;
+    padding: 20px;
+}
+
+#resume .container article .experience > h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+}
+
+#resume .container article .experience > h3::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 5px;
+    width: 200px;
+    background: #0d47a1;
+}

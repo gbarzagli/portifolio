@@ -19,9 +19,11 @@
 
 /*----- TIMELINE ITEM -----*/
 .timeline-item {
-    width: 50%;
+    height: fit-content;
     padding-left: 40px;
     position: relative;
+    width: 50%;
+    
 }
 .timeline-item:last-child {
     padding-bottom: 0;
@@ -43,7 +45,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 10px;
     width: 15px;
 }
 .timeline-marker::before {
@@ -83,7 +85,7 @@
 }
 
 .timeline-item:nth-child(odd) {
-    float: right;
+    margin: 0 0 0 auto;
 }
 .timeline-item:nth-child(even) {
     display: grid;
@@ -94,27 +96,7 @@
     text-align: right;
 }
 
-.timeline-item:nth-child(even) .timeline-marker::before {
-    background: #0d47a1;
-    border: 3px solid transparent;
-    border-radius: 100%;
-    content: "";
-    display: block;
-    height: 12px;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    width: 12px;
-    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
-}
-
-.timeline-item:nth-child(even) .timeline-marker::after {
-    content: "";
-    width: 3px;
-    background: #ccd5db;
-    display: block;
-    position: absolute;
-    top: 18px;
-    bottom: 0;
-    right: 7px;
+.timeline-item:nth-child(even) .timeline-marker {
+    left: auto;
+    right: 15px;
 }

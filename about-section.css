@@ -1,0 +1,45 @@
+
+#about {
+    display: grid;
+    grid-template-areas: "img title" "img text";
+    grid-template-columns: 15% auto;
+    grid-auto-rows: max-content auto;
+    grid-column-gap: 20px;
+    align-content: center;
+    position: relative;
+    background: #ffffff;
+    padding: var(--content-padding);
+}
+
+#about::before {
+    right: 100%;
+    top: 55%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #ffffff;
+    border-width: 20px;
+    margin-top: -20px;
+}
+
+#about img {
+    grid-area: img;
+    width: 100%;
+    border-radius: 100%;
+}
+
+#about h1 {
+    grid-area: title;
+    font-family: "Pacifico";
+    font-size: 3.5em;
+    margin: 0;
+    color: #f44336;
+}
+
+#about p {
+    grid-area: text;
+    font-size: 1.6em;
+}
