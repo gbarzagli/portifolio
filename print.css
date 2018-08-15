@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Montserrat|Pacifico");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+@import url("./variables.css");
+@import url("./timeline.css");
+@import url("./resume-section.css");
+
+body,
+html {
+    height: 100vh;
+    font-family: "Roboto";
+    margin: 0;
+}
+
+
+aside {
+    display: none;
+}
+
+main {
+    display: grid;
+}
+
+main section {
+    height: 100vh;
+}
+
+#home {
+    display: none;
+}
+
+#about {
+    display: none;
+}
+
+.btn {
+    display: none;
+}
+
+#resume .container {
+    padding: 0;
+}

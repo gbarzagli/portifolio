@@ -10,6 +10,7 @@
     <!-- tablet = min-width:641px -->
     <!-- desktop = min-width:64.063em -->
     <link rel="stylesheet" media="screen and (min-width: 80.063em)" href="large-desktop.css">
+    <link rel="stylesheet" media="print" href="print.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
         <section id="resume">
             <div class="container">
                 <article>
-                    <button class="btn" onclick="alert()">
+                    <button class="btn" onclick="print()">
                         <i class="material-icons">print</i>
                     </button>
                     <header>
@@ -127,6 +128,28 @@
                     </section>
                     <section class="education">
                         <h3>Education History</h3>
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>Jan/2015 | Dec/2017</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Systems Analysis and Development</h4>
+                                    <p>Instituto Federal de São Paulo - IFSP</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>Jan/2010 | Dec/2012</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Computer Technician</h4>
+                                    <p>Colégio Técnico de Limeira - COTIL</p>
+                                </div>
+                            </li>
+                        </ul>
                     </section>
                 </article>
             </div>
