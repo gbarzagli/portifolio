@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto|Montserrat|Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 @import url("./variables.css");
@@ -39,4 +39,9 @@ main section {
 
 #resume .container {
     padding: 0;
+}
+
+#resume .container article header {
+    width: calc(100% - 60px);
+    padding: 30px;
 }
