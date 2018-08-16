@@ -161,3 +161,19 @@
     width: 175px;
     background: #0d47a1;
 }
+
+#resume .container article .skills > h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+}
+
+#resume .container article .skills > h3::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 5px;
+    width: 135px;
+    background: #0d47a1;
+}
