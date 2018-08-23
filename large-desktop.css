@@ -91,6 +91,6 @@ main {
     display: grid;
 }
 
-main section {
+main > section {
     height: 100vh;
 }
