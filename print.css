@@ -10,6 +10,7 @@ html {
     height: 100vh;
     font-family: "Roboto";
     margin: 0;
+    -webkit-print-color-adjust: exact;
 }
 
 
@@ -44,4 +45,9 @@ main section {
 #resume .container article header {
     width: calc(100% - 60px);
     padding: 30px;
+}
+
+.page-break {
+    display: block;
+    page-break-before: always;
 }

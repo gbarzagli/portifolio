@@ -157,6 +157,8 @@
                             </li>
                         </ul>
                     </section>
+                    <p style="page-break-after: always;">&nbsp;</p>
+                    <p style="page-break-before: always;">&nbsp;</p>
                     <section class="skills">
                         <h3>
                             <i class="material-icons">code</i>
@@ -165,9 +167,11 @@
                         <div class="charts">
                             <div>
                                 <canvas id="backend_chart"></canvas>
+                                <img id="backend_chart_print" />
                             </div>
                             <div>
                                 <canvas id="frontend_chart"></canvas>
+                                <img id="frontend_chart_print" />
                             </div>
                         </div>
                     </section>
@@ -177,95 +181,7 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script>
-        new Chart('backend_chart', {
-            type: 'line',
-            data: {
-                labels: ['Java', 'Spring', 'SQL', 'Node.js', 'MongoDB'],
-                datasets: [{
-                    label: 'Backend',
-                    backgroundColor: 'rgba(63,81,181,0.2)',
-                    borderColor: 'rgb(63,81,181)',
-                    data: [
-                        90, 80, 80, 60, 30
-                    ],
-                    fill: 'start'
-                }]
-            },
-            options: {
-                responsive: true,
-                title: {
-                    display: true,
-                    text: 'Backend'
-                },
-                legend: {
-                    display: false
-                },
-                elements: {
-                    line: {
-                        tension: 0
-                    }
-                },
-                scales: {
-                    xAxes: [
-                        { position: 'top' },
-                    ],
-                    yAxes: [
-                        {
-                            ticks: {
-                                min: 0,
-                                max: 100
-                            }
-                        }
-                    ]
-                }
-            }
-        });
-
-        new Chart('frontend_chart', {
-            type: 'line',
-            data: {
-                labels: ['HTML5', 'CSS3', 'Javascript', 'Angular', 'SASS'],
-                datasets: [{
-                    label: 'Frontend',
-                    backgroundColor: 'rgba(63,81,181,0.2)',
-                    borderColor: 'rgb(63,81,181)',
-                    data: [
-                        80, 80, 90, 95, 70
-                    ],
-                    fill: 'start'
-                }]
-            },
-            options: {
-                responsive: true,
-                title: {
-                    display: true,
-                    text: 'Frontend'
-                },
-                legend: {
-                    display: false
-                },
-                elements: {
-                    line: {
-                        tension: 0
-                    }
-                },
-                scales: {
-                    xAxes: [
-                        { position: 'top' },
-                    ],
-                    yAxes: [
-                        {
-                            ticks: {
-                                min: 0,
-                                max: 100
-                            }
-                        }
-                    ]
-                }
-            }
-        });
-    </script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
