@@ -22,10 +22,6 @@ main {
     display: grid;
 }
 
-main section {
-    height: 100vh;
-}
-
 #home {
     display: none;
 }
@@ -47,7 +43,17 @@ main section {
     padding: 30px;
 }
 
-.page-break {
-    display: block;
-    page-break-before: always;
+#resume .container article .skills {
+    page-break-inside: avoid;
+}
+
+#resume .container article .skills .charts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+#resume .container article .skills .charts div {
+    display: grid;
+    place-content: center;
 }
