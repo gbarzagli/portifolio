@@ -43,8 +43,7 @@ aside {
     height: 50%;
 }
 
-.home-link {
-    grid-area: home;
+.button {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -56,34 +55,19 @@ aside {
     border-radius: 100%;
     width: 70px;
     height: 70px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+.home-link {
+    grid-area: home;
 }
 
 .about-link {
     grid-area: about;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: #455a64;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
 }
 
 .know-link {
     grid-area: knowledge;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: #455a64;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
 }
 
 main {

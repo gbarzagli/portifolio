@@ -37,7 +37,7 @@ const backendChart = new Chart("backend_chart", {
                 label: "Backend",
                 backgroundColor: "rgba(63,81,181,0.2)",
                 borderColor: "rgb(63,81,181)",
-                data: [90, 80, 80, 60, 30],
+                data: [90, 85, 80, 60, 30],
                 fill: "start"
             }
         ]
