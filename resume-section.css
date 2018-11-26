@@ -45,16 +45,23 @@
 
 #resume .container article .btn {
     background-color: #263238;
-    border: 0;
-    border-radius: 50%;
-    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.45);
-    cursor: pointer;
+    background-position: center;
     height: 4em;
     position: absolute;
     right: 10px;
     top: 10px;
     width: 4em;
-    z-index: 1;
+    transition: background 0.5s;
+}
+
+#resume .container article .btn:hover {
+    background: #455A64 radial-gradient(circle, transparent 1%, #455A64 1%) center/15000%;
+}
+
+#resume .container article .btn:active {
+    background-color: #263238;
+    background-size: 100%;
+    transition: background 0s;
 }
 
 #resume .container article .btn:focus {
