@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Montserrat|Pacifico");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+@import url("./variables.css");
+@import url("./timeline.css");
+
+@import url("./home-section.css");
+@import url("./about-section.css");
+@import url("./resume-section.css");
+
+body,
+html {
+    height: 100vh;
+    font-family: "Roboto";
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: var(--grid-template-areas);
+    grid-template-columns: var(--grid-template-columns);
+    grid-auto-rows: var(--grid-template-rows);
+    overflow: hidden;
+}
+
+aside {
+    grid-area: sidebar;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #263238;
+}
+
+.links {
+    grid-area: links;
+    display: grid;
+    grid-template-areas: "home" "about" "knowledge";
+    align-items: center;
+    position: fixed;
+    left: 2.5%;
+    top: 30%;
+    height: 50%;
+}
+
+.button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #455a64;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+.home-link {
+    grid-area: home;
+}
+
+.about-link {
+    grid-area: about;
+}
+
+.know-link {
+    grid-area: knowledge;
+}
+
+main {
+    grid-area: content;
+    display: grid;
+}
+
+main > section {
+    height: 100vh;
+}
